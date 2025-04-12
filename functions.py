@@ -3,7 +3,23 @@ import os
 import requests
 from dotenv import load_dotenv
 from datetime import datetime
+import logging
 
+# === CONFIGURAÇÃO DO LOG ===
+log_dir = "logs_chave_nao_existente"
+os.makedirs(log_dir, exist_ok=True)
+log_filename = datetime.now().strftime("log_%Y-%m-%d.txt")
+log_path = os.path.join(log_dir, log_filename)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(message)s",
+    handlers=[
+        logging.FileHandler(log_path, encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
+log = logging.info
 
 load_dotenv()
 
@@ -37,10 +53,7 @@ def obter_ip_filial(filial):
 
     return filial_db_config
 
-
 def conectar_filial(num_filial):
-    """Estabelece conexão com o banco de dados central e retorna a conexão."""
-
     config_bd_filial = obter_ip_filial(num_filial)
     try:
         conn = pyodbc.connect(
@@ -52,13 +65,10 @@ def conectar_filial(num_filial):
         )
         return conn
     except Exception as e:
-        print(f"Erro ao conectar ao banco da filial: {e}")
+        log(f"Erro ao conectar ao banco da filial: {e}")
         return None
 
-
-
 def conectar_central():
-    """Estabelece conexão com o banco de dados central e retorna a conexão."""
     try:
         conn = pyodbc.connect(
             f"DRIVER={{SQL Server}};"
@@ -68,23 +78,17 @@ def conectar_central():
             f"PWD={central_db_config['password']}"
         )
         return conn
-
     except Exception as e:
-        print(f"Erro ao conectar ao banco central: {e}")
+        log(f"Erro ao conectar ao banco central: {e}")
         return None
 
-
-
-
 def ler_arquivo(nome_arquivo):
-    """Lê um arquivo linha por linha e retorna uma lista de strings sem quebras de linha."""
     if os.path.exists(nome_arquivo):
         with open(nome_arquivo, "r") as arquivo:
             return [linha.strip() for linha in arquivo.readlines() if linha.strip()]
     return []
 
 def consultar_notas_central(chaves, num_filial):
-    """Consulta as notas no banco central e separa as chaves conforme sua situação."""
     try:
         conn = conectar_central()
         if conn is None:
@@ -95,7 +99,7 @@ def consultar_notas_central(chaves, num_filial):
         notas_na_central = []
         notas_nao_central = []
         notas_sem_pedido = []
-        notas_outra_filial =[]
+        notas_outra_filial = []
 
         for chave in chaves:
             cursor.execute("SELECT NF_COMPRA, PEDIDO_COMPRA, EMPRESA FROM NF_COMPRA WHERE CHAVE_NFE = ?", (chave,))
@@ -110,24 +114,21 @@ def consultar_notas_central(chaves, num_filial):
 
                 if nota_info["EMPRESA"] == num_filial:
                     notas_na_central.append(chave)
-
                 else:
-                    notas_outra_filial.append(nota_info)  # Somente notas com pedido serão verificadas na filial
+                    notas_outra_filial.append(nota_info)
             else:
                 notas_nao_central.append(chave)
 
         cursor.close()
         conn.close()
 
-
-        return notas_na_central, notas_nao_central, notas_sem_pedido, notas_outra_filial  # Apenas as notas confirmadas na central serão verificadas na filial
+        return notas_na_central, notas_nao_central, notas_sem_pedido, notas_outra_filial
 
     except Exception as e:
-        print(f"Erro ao consultar notas na central: {e}")
-        return [], [], []
+        log(f"Erro ao consultar notas na central: {e}")
+        return [], [], [], []
 
 def consultar_notas_filial(notas_na_central, num_filial):
-    """Consulta apenas as notas já confirmadas na central no banco da filial."""
     try:
         conn_filial = conectar_filial(num_filial)
         if conn_filial is None:
@@ -152,18 +153,9 @@ def consultar_notas_filial(notas_na_central, num_filial):
 
         return notas_integradas, notas_nao_loja
     except Exception as e:
-        print(f"Erro ao consultar notas na filial: {e}")
-
+        log(f"Erro ao consultar notas na filial: {e}")
 
 def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, notas_integradas, notas_nao_loja, notas_outra_filial):
-    """
-    Interage em um chamado na API Desk.ms, atualizando a descrição com as notas extraídas.
-
-    :param cod_chamado: Código do chamado a ser interagido.
-    :param token: Token de autenticação na API.
-    """
-
-    # Criando a descrição formatada
     descricao = "Resumo da Integração de Notas\n\n"
 
     if notas_integradas:
@@ -181,25 +173,19 @@ def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, n
         descricao += "Chamado encaminhado para análise.\n\n"
 
     if notas_outra_filial:
-        descricao += "*As seguintes notas não pertencem a esta loja:*\n" + "\n".join(notas_nao_central) + "\n\n"
+        descricao += "*As seguintes notas não pertencem a esta loja:*\n"
         for nota in notas_outra_filial:
             descricao += f"{nota['CHAVE']} --  FILIAL {nota['EMPRESA']}\n"
         descricao += "\n"
 
-
-    # Definição do status do chamado
     if notas_nao_central or notas_nao_loja:
-        cod_status = "0000006"  # Chamado permanece aberto para análise
+        cod_status = "0000006"
     else:
-        cod_status = "0000002"  # Chamado pode ser encerrado
+        cod_status = "0000002"
 
-    # Obtendo data e hora atual
     data_interacao = datetime.now().strftime("%d-%m-%Y")
-
-    # URL da API
     url = "https://api.desk.ms/ChamadosSuporte/interagir"
 
-    # Payload da requisição
     payload = {
         "Chave": cod_chamado,
         "TChamado": {
@@ -236,7 +222,6 @@ def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, n
         }
     }
 
-    # Configuração do cabeçalho da requisição
     headers = {
         "Authorization": token,
         "Content-Type": "application/json"
@@ -246,22 +231,23 @@ def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, n
         response = requests.put(url, json=payload, headers=headers)
 
         if response.status_code == 200:
-            print(f"Interação no chamado {cod_chamado} realizada com sucesso!")
-            print(response.text)
-
+            if cod_status == "0000006":
+                log(f"Chamado {cod_chamado} encaminhado para análise.")
+                log(response.text)
+                log('\n')
+            if cod_status == "0000002":
+                log(f"Chamado {cod_chamado} encerrado com sucesso!")
+                log(response.text)
+                log('\n')
         else:
-            print(f"Erro ao interagir no chamado. Código: {response.status_code}")
-            print("Resposta da API:")
-            print(response.text)
-
-            # Tenta extrair detalhes do erro se a resposta for JSON
+            log(f"Erro ao interagir no chamado. Código: {response.status_code}")
+            log("Resposta da API:")
+            log(response.text)
             try:
                 erro_json = response.json()
-                print("Detalhes do erro:", erro_json)
+                log(f"Detalhes do erro: {erro_json}")
             except ValueError:
-                print("Não foi possível converter a resposta da API para JSON.")
+                log("Não foi possível converter a resposta da API para JSON.")
 
     except requests.exceptions.RequestException as e:
-        print(f"Erro ao conectar com a API: {e}")
-
-
+        log(f"Erro ao conectar com a API: {e}")
