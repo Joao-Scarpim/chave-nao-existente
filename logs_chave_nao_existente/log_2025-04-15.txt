@@ -1,0 +1,339 @@
+2025-04-15 09:48:53,496 - Autenticação realizada com sucesso! Token: bmlzc2Vp#1eb289faf705bc64a4bc67fe59d5d1e30fd14d12
+2025-04-15 09:48:54,894 - Chamado: 0425-004928
+2025-04-15 09:48:54,894 - Filial identificada: 125
+2025-04-15 09:48:59,114 - Chamado 0425-004928 encaminhado para análise. 
+
+2025-04-15 09:48:59,115 - Chamado: 0425-005447
+2025-04-15 09:48:59,115 - Filial identificada: 163
+2025-04-15 09:49:14,884 - Chamado 0425-005447 encaminhado para análise. 
+
+2025-04-15 09:49:14,886 - Chamado: 0425-006380
+2025-04-15 09:49:14,887 - Filial identificada: 271
+2025-04-15 09:49:30,641 - Chamado 0425-006380 encaminhado para análise. 
+
+2025-04-15 09:49:30,645 - Chamado: 0425-006406
+2025-04-15 09:49:30,645 - Filial identificada: 385
+2025-04-15 09:49:34,022 - Chamado 0425-006406 encerrado com sucesso! 
+
+2025-04-15 09:49:34,023 - Chamado: 0425-006499
+2025-04-15 09:49:34,023 - Filial identificada: 464
+2025-04-15 09:49:45,273 - Chamado 0425-006499 encaminhado para análise. 
+
+2025-04-15 09:49:45,275 - Chamado: 0425-006548
+2025-04-15 09:49:45,275 - Filial identificada: 47
+2025-04-15 09:49:51,988 - Chamado 0425-006548 encaminhado para análise. 
+
+2025-04-15 09:49:51,989 - Chamado: 0425-006687
+2025-04-15 09:49:51,989 - Filial identificada: 190
+2025-04-15 09:50:07,464 - Chamado 0425-006687 encaminhado para análise. 
+
+2025-04-15 09:50:07,465 - Chamado: 0425-006721
+2025-04-15 09:50:07,465 - Filial identificada: 386
+2025-04-15 09:50:24,858 - Chamado 0425-006721 encaminhado para análise. 
+
+2025-04-15 09:50:24,859 - Chamado: 0425-006784
+2025-04-15 09:50:24,859 - Filial identificada: 493
+2025-04-15 09:50:27,963 - Chamado 0425-006784 encaminhado para análise. 
+
+2025-04-15 09:50:27,965 - Chamado: 0425-006785
+2025-04-15 09:50:27,965 - Filial identificada: 229
+2025-04-15 09:50:45,946 - Chamado 0425-006785 encaminhado para análise. 
+
+2025-04-15 09:50:45,947 - Chamado: 0425-006890
+2025-04-15 09:50:45,948 - Filial identificada: 289
+2025-04-15 09:51:03,007 - Chamado 0425-006890 encaminhado para análise. 
+
+2025-04-15 09:51:03,009 - Chamado: 0425-007353
+2025-04-15 09:51:03,009 - Filial identificada: 398
+2025-04-15 09:51:09,146 - Chamado 0425-007353 encaminhado para análise. 
+
+2025-04-15 09:51:09,147 - Chamado: 0425-007502
+2025-04-15 09:51:09,148 - Filial identificada: 468
+2025-04-15 09:51:25,604 - Chamado 0425-007502 encaminhado para análise. 
+
+2025-04-15 09:51:25,605 - Chamado: 0425-007508
+2025-04-15 09:51:25,606 - Filial identificada: 249
+2025-04-15 09:51:29,943 - Chamado 0425-007508 encaminhado para análise. 
+
+2025-04-15 09:51:29,944 - Chamado: 0425-007858
+2025-04-15 09:51:29,944 - Filial identificada: 297
+2025-04-15 09:51:34,684 - Chamado 0425-007858 encerrado com sucesso! 
+
+2025-04-15 09:51:34,685 - Chamado: 0425-008011
+2025-04-15 09:51:34,685 - Filial identificada: 396
+2025-04-15 09:51:51,342 - Chamado 0425-008011 encerrado com sucesso! 
+
+2025-04-15 09:51:51,344 - Chamado: 0425-008301
+2025-04-15 09:51:51,344 - Filial identificada: 341
+2025-04-15 09:52:08,918 - Chamado 0425-008301 encaminhado para análise. 
+
+2025-04-15 09:52:08,919 - Chamado: 0425-008496
+2025-04-15 09:52:08,919 - Filial identificada: 229
+2025-04-15 09:52:11,771 - Chamado 0425-008496 encaminhado para análise. 
+
+2025-04-15 09:52:11,772 - Chamado: 0425-008880
+2025-04-15 09:52:11,772 - Filial identificada: 428
+2025-04-15 09:52:28,236 - Chamado 0425-008880 encaminhado para análise. 
+
+2025-04-15 09:52:28,237 - Chamado: 0425-008989
+2025-04-15 09:52:28,237 - Filial identificada: 153
+2025-04-15 09:52:32,334 - Chamado 0425-008989 encaminhado para análise. 
+
+2025-04-15 09:52:32,335 - Chamado: 0425-008997
+2025-04-15 09:52:32,335 - Filial identificada: 384
+2025-04-15 09:52:43,803 - Chamado 0425-008997 encaminhado para análise. 
+
+2025-04-15 09:52:43,804 - Chamado: 0425-009035
+2025-04-15 09:52:43,804 - Filial identificada: 155
+2025-04-15 09:53:01,271 - Chamado 0425-009035 encaminhado para análise. 
+
+2025-04-15 09:53:01,272 - Chamado: 0425-009183
+2025-04-15 09:53:01,272 - Filial identificada: 227
+2025-04-15 09:53:20,020 - Chamado 0425-009183 encaminhado para análise. 
+
+2025-04-15 09:53:20,021 - Chamado: 0425-009633
+2025-04-15 09:53:20,021 - Filial identificada: 319
+2025-04-15 09:53:36,188 - Chamado 0425-009633 encaminhado para análise. 
+
+2025-04-15 09:53:36,189 - Chamado: 0425-010338
+2025-04-15 09:53:36,189 - Filial identificada: 136
+2025-04-15 09:53:52,060 - Chamado 0425-010338 encaminhado para análise. 
+
+2025-04-15 09:53:52,062 - Chamado: 0425-010503
+2025-04-15 09:53:52,062 - Filial identificada: 193
+2025-04-15 09:53:56,864 - Chamado 0425-010503 encaminhado para análise. 
+
+2025-04-15 09:53:56,864 - Chamado: 0425-010571
+2025-04-15 09:53:56,865 - Filial identificada: 167
+2025-04-15 09:54:00,801 - Chamado 0425-010571 encaminhado para análise. 
+
+2025-04-15 09:54:00,802 - Chamado: 0425-010734
+2025-04-15 09:54:00,802 - Filial identificada: 266
+2025-04-15 09:54:04,481 - Chamado 0425-010734 encaminhado para análise. 
+
+2025-04-15 09:54:04,483 - Chamado: 0425-011216
+2025-04-15 09:54:04,484 - Filial identificada: 178
+2025-04-15 09:54:12,273 - Chamado 0425-011216 encaminhado para análise. 
+
+2025-04-15 09:54:12,276 - Chamado: 0425-011232
+2025-04-15 09:54:12,276 - Filial identificada: 178
+2025-04-15 09:54:27,591 - Chamado 0425-011232 encaminhado para análise. 
+
+2025-04-15 09:54:27,593 - Chamado: 0425-011431
+2025-04-15 09:54:27,593 - Filial identificada: 104
+2025-04-15 09:54:44,428 - Chamado 0425-011431 encaminhado para análise. 
+
+2025-04-15 09:54:44,429 - Chamado: 0425-012100
+2025-04-15 09:54:44,429 - Filial identificada: 399
+2025-04-15 09:55:01,765 - Chamado 0425-012100 encaminhado para análise. 
+
+2025-04-15 09:55:01,770 - Chamado: 0425-012190
+2025-04-15 09:55:01,771 - Filial identificada: 284
+2025-04-15 09:55:18,753 - Chamado 0425-012190 encerrado com sucesso! 
+
+2025-04-15 09:55:18,756 - Chamado: 0425-012339
+2025-04-15 09:55:18,756 - Filial identificada: 242
+2025-04-15 09:55:35,601 - Chamado 0425-012339 encaminhado para análise. 
+
+2025-04-15 09:55:35,602 - Chamado: 0425-012444
+2025-04-15 09:55:35,603 - Filial identificada: 249
+2025-04-15 09:55:39,173 - Chamado 0425-012444 encaminhado para análise. 
+
+2025-04-15 09:55:39,174 - Chamado: 0425-012494
+2025-04-15 09:55:39,174 - Filial identificada: 231
+2025-04-15 09:55:49,918 - Chamado 0425-012494 encaminhado para análise. 
+
+2025-04-15 09:55:49,921 - Chamado: 0425-012635
+2025-04-15 09:55:49,921 - Filial identificada: 250
+2025-04-15 09:56:10,546 - Chamado 0425-012635 encaminhado para análise. 
+
+2025-04-15 09:56:10,548 - Chamado: 0425-013223
+2025-04-15 09:56:10,549 - Filial identificada: 303
+2025-04-15 09:56:13,301 - Chamado 0425-013223 encaminhado para análise. 
+
+2025-04-15 09:56:13,302 - Chamado: 0425-013518
+2025-04-15 09:56:13,303 - Filial identificada: 314
+2025-04-15 09:56:25,150 - Chamado 0425-013518 encaminhado para análise. 
+
+2025-04-15 09:56:25,151 - Chamado: 0425-013523
+2025-04-15 09:56:25,151 - Filial identificada: 314
+2025-04-15 09:56:40,024 - Chamado 0425-013523 encaminhado para análise. 
+
+2025-04-15 09:56:40,025 - Chamado: 0425-014030
+2025-04-15 09:56:40,025 - Filial identificada: 178
+2025-04-15 09:56:44,501 - Chamado 0425-014030 encaminhado para análise. 
+
+2025-04-15 09:56:44,502 - Chamado: 0425-014376
+2025-04-15 09:56:44,502 - Filial identificada: 208
+2025-04-15 09:56:50,825 - Chamado 0425-014376 encaminhado para análise. 
+
+2025-04-15 09:56:50,827 - Chamado: 0425-014386
+2025-04-15 09:56:50,827 - Filial identificada: 279
+2025-04-15 09:57:12,121 - Chamado 0425-014386 encaminhado para análise. 
+
+2025-04-15 09:57:12,122 - Chamado: 0425-014415
+2025-04-15 09:57:12,123 - Filial identificada: 358
+2025-04-15 09:57:18,908 - Chamado 0425-014415 encaminhado para análise. 
+
+2025-04-15 10:25:36,897 - Autenticação realizada com sucesso! Token: bmlzc2Vp#e9e48e0d276a2cbeb30db32ece1fac3378e1b4c2
+2025-04-15 10:25:38,743 - Chamado: 0425-004928
+2025-04-15 10:25:38,743 - Filial identificada: 125
+2025-04-15 10:25:48,507 - Chamado 0425-004928 encaminhado para análise. 
+
+2025-04-15 10:25:48,508 - Chamado: 0425-005447
+2025-04-15 10:25:48,508 - Filial identificada: 163
+2025-04-15 10:26:04,233 - Chamado 0425-005447 encaminhado para análise. 
+
+2025-04-15 10:26:04,234 - Chamado: 0425-006380
+2025-04-15 10:26:04,234 - Filial identificada: 271
+2025-04-15 10:26:08,901 - Chamado 0425-006380 encaminhado para análise. 
+
+2025-04-15 10:26:08,902 - Chamado: 0425-006499
+2025-04-15 10:26:08,902 - Filial identificada: 464
+2025-04-15 10:26:20,732 - Chamado 0425-006499 encaminhado para análise. 
+
+2025-04-15 10:26:20,733 - Chamado: 0425-006548
+2025-04-15 10:26:20,733 - Filial identificada: 47
+2025-04-15 10:26:36,232 - Chamado 0425-006548 encaminhado para análise. 
+
+2025-04-15 10:26:36,233 - Chamado: 0425-006687
+2025-04-15 10:26:36,233 - Filial identificada: 190
+2025-04-15 10:26:38,726 - Chamado 0425-006687 encaminhado para análise. 
+
+2025-04-15 10:26:38,727 - Chamado: 0425-006721
+2025-04-15 10:26:38,727 - Filial identificada: 386
+2025-04-15 10:26:41,501 - Chamado 0425-006721 encaminhado para análise. 
+
+2025-04-15 10:26:41,502 - Chamado: 0425-006784
+2025-04-15 10:26:41,502 - Filial identificada: 493
+2025-04-15 10:26:50,994 - Chamado 0425-006784 encaminhado para análise. 
+
+2025-04-15 10:26:50,995 - Chamado: 0425-006785
+2025-04-15 10:26:50,995 - Filial identificada: 229
+2025-04-15 10:27:07,172 - Chamado 0425-006785 encaminhado para análise. 
+
+2025-04-15 10:27:07,173 - Chamado: 0425-006890
+2025-04-15 10:27:07,174 - Filial identificada: 289
+2025-04-15 10:27:10,828 - Chamado 0425-006890 encaminhado para análise. 
+
+2025-04-15 10:27:10,829 - Chamado: 0425-007353
+2025-04-15 10:27:10,829 - Filial identificada: 398
+2025-04-15 10:27:22,876 - Chamado 0425-007353 encaminhado para análise. 
+
+2025-04-15 10:27:22,877 - Chamado: 0425-007502
+2025-04-15 10:27:22,877 - Filial identificada: 468
+2025-04-15 10:27:26,058 - Chamado 0425-007502 encaminhado para análise. 
+
+2025-04-15 10:27:26,059 - Chamado: 0425-007508
+2025-04-15 10:27:26,059 - Filial identificada: 249
+2025-04-15 10:27:31,102 - Chamado 0425-007508 encaminhado para análise. 
+
+2025-04-15 10:27:31,103 - Chamado: 0425-008301
+2025-04-15 10:27:31,103 - Filial identificada: 341
+2025-04-15 10:27:35,011 - Chamado 0425-008301 encaminhado para análise. 
+
+2025-04-15 10:27:35,012 - Chamado: 0425-008496
+2025-04-15 10:27:35,012 - Filial identificada: 229
+2025-04-15 10:27:42,050 - Chamado 0425-008496 encaminhado para análise. 
+
+2025-04-15 10:27:42,051 - Chamado: 0425-008880
+2025-04-15 10:27:42,051 - Filial identificada: 428
+2025-04-15 10:27:45,030 - Chamado 0425-008880 encaminhado para análise. 
+
+2025-04-15 10:27:45,032 - Chamado: 0425-008989
+2025-04-15 10:27:45,032 - Filial identificada: 153
+2025-04-15 10:27:56,431 - Chamado 0425-008989 encaminhado para análise. 
+
+2025-04-15 10:27:56,432 - Chamado: 0425-008997
+2025-04-15 10:27:56,432 - Filial identificada: 384
+2025-04-15 10:28:04,198 - Chamado 0425-008997 encaminhado para análise. 
+
+2025-04-15 10:28:04,199 - Chamado: 0425-009035
+2025-04-15 10:28:04,199 - Filial identificada: 155
+2025-04-15 10:28:15,127 - Chamado 0425-009035 encaminhado para análise. 
+
+2025-04-15 10:28:15,128 - Chamado: 0425-009183
+2025-04-15 10:28:15,129 - Filial identificada: 227
+2025-04-15 10:28:29,852 - Chamado 0425-009183 encaminhado para análise. 
+
+2025-04-15 10:28:29,853 - Chamado: 0425-009633
+2025-04-15 10:28:29,853 - Filial identificada: 319
+2025-04-15 10:28:34,135 - Chamado 0425-009633 encaminhado para análise. 
+
+2025-04-15 10:28:34,136 - Chamado: 0425-010338
+2025-04-15 10:28:34,136 - Filial identificada: 136
+2025-04-15 10:28:42,915 - Chamado 0425-010338 encaminhado para análise. 
+
+2025-04-15 10:28:42,917 - Chamado: 0425-010503
+2025-04-15 10:28:42,917 - Filial identificada: 193
+2025-04-15 10:28:47,429 - Chamado 0425-010503 encaminhado para análise. 
+
+2025-04-15 10:28:47,430 - Chamado: 0425-010571
+2025-04-15 10:28:47,431 - Filial identificada: 167
+2025-04-15 10:28:51,484 - Chamado 0425-010571 encaminhado para análise. 
+
+2025-04-15 10:28:51,484 - Chamado: 0425-010734
+2025-04-15 10:28:51,485 - Filial identificada: 266
+2025-04-15 10:28:55,307 - Chamado 0425-010734 encaminhado para análise. 
+
+2025-04-15 10:28:55,308 - Chamado: 0425-011216
+2025-04-15 10:28:55,308 - Filial identificada: 178
+2025-04-15 10:28:59,242 - Chamado 0425-011216 encaminhado para análise. 
+
+2025-04-15 10:28:59,243 - Chamado: 0425-011232
+2025-04-15 10:28:59,243 - Filial identificada: 178
+2025-04-15 10:29:01,851 - Chamado 0425-011232 encaminhado para análise. 
+
+2025-04-15 10:29:01,852 - Chamado: 0425-011431
+2025-04-15 10:29:01,853 - Filial identificada: 104
+2025-04-15 10:29:11,651 - Chamado 0425-011431 encaminhado para análise. 
+
+2025-04-15 10:29:11,653 - Chamado: 0425-012100
+2025-04-15 10:29:11,653 - Filial identificada: 399
+2025-04-15 10:29:15,114 - Chamado 0425-012100 encaminhado para análise. 
+
+2025-04-15 10:29:15,115 - Chamado: 0425-012339
+2025-04-15 10:29:15,115 - Filial identificada: 242
+2025-04-15 10:29:29,844 - Chamado 0425-012339 encaminhado para análise. 
+
+2025-04-15 10:29:29,844 - Chamado: 0425-012444
+2025-04-15 10:29:29,844 - Filial identificada: 249
+2025-04-15 10:29:33,804 - Chamado 0425-012444 encaminhado para análise. 
+
+2025-04-15 10:29:33,805 - Chamado: 0425-012494
+2025-04-15 10:29:33,805 - Filial identificada: 231
+2025-04-15 10:29:47,160 - Chamado 0425-012494 encaminhado para análise. 
+
+2025-04-15 10:29:47,163 - Chamado: 0425-012635
+2025-04-15 10:29:47,163 - Filial identificada: 250
+2025-04-15 10:30:05,517 - Chamado 0425-012635 encaminhado para análise. 
+
+2025-04-15 10:30:05,518 - Chamado: 0425-013223
+2025-04-15 10:30:05,518 - Filial identificada: 303
+2025-04-15 10:30:09,305 - Chamado 0425-013223 encaminhado para análise. 
+
+2025-04-15 10:30:09,307 - Chamado: 0425-013518
+2025-04-15 10:30:09,308 - Filial identificada: 314
+2025-04-15 10:30:12,890 - Chamado 0425-013518 encaminhado para análise. 
+
+2025-04-15 10:30:12,891 - Chamado: 0425-013523
+2025-04-15 10:30:12,891 - Filial identificada: 314
+2025-04-15 10:30:15,668 - Chamado 0425-013523 encaminhado para análise. 
+
+2025-04-15 10:30:15,669 - Chamado: 0425-014030
+2025-04-15 10:30:15,670 - Filial identificada: 178
+2025-04-15 10:30:19,622 - Chamado 0425-014030 encaminhado para análise. 
+
+2025-04-15 10:30:19,623 - Chamado: 0425-014376
+2025-04-15 10:30:19,623 - Filial identificada: 208
+2025-04-15 10:30:30,577 - Chamado 0425-014376 encaminhado para análise. 
+
+2025-04-15 10:30:30,579 - Chamado: 0425-014386
+2025-04-15 10:30:30,579 - Filial identificada: 279
+2025-04-15 10:30:46,246 - Chamado 0425-014386 encaminhado para análise. 
+
+2025-04-15 10:30:46,250 - Chamado: 0425-014415
+2025-04-15 10:30:46,250 - Filial identificada: 358
+2025-04-15 10:30:49,829 - Chamado 0425-014415 encaminhado para análise. 
+
+2025-04-15 19:53:52,124 - Autenticação realizada com sucesso! Token: bmlzc2Vp#d366cd76e50acbf133b55dadf8284000acd4bf21

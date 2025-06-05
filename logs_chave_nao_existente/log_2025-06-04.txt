@@ -1,0 +1,54 @@
+2025-06-04 10:24:03,339 - Autenticação realizada com sucesso! Token: bmlzc2Vp#92f09837ce476dd278fa509317943c6055617f33
+2025-06-04 10:24:49,614 - Autenticação realizada com sucesso! Token: bmlzc2Vp#6eadd4d75bd4f4fa9f133f18166097572834ce75
+2025-06-04 10:25:03,763 - Chamado: 0625-002339
+2025-06-04 10:25:03,763 - Filial identificada: 412
+2025-06-04 10:25:05,150 - Ocorreu um erro durante a requisição: too many values to unpack (expected 4)
+2025-06-04 10:27:11,775 - Autenticação realizada com sucesso! Token: bmlzc2Vp#9b7c46b929ec962fdbece175d9aaf0224e4d5ba9
+2025-06-04 10:27:12,976 - Chamado: 0625-002339
+2025-06-04 10:27:12,977 - Filial identificada: 412
+2025-06-04 10:27:16,227 - Chamado 0625-002339 encerrado com sucesso! 
+
+2025-06-04 10:27:16,228 - Chamado: 0625-002751
+2025-06-04 10:27:16,228 - Filial identificada: 157
+2025-06-04 10:27:17,189 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:27:17,688 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:27:18,193 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:27:18,700 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:27:19,227 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:27:20,565 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:27:21,079 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:31:49,904 - Autenticação realizada com sucesso! Token: bmlzc2Vp#47f2d5ea679146178edc7bc379927336cf67c178
+2025-06-04 10:31:51,180 - Chamado: 0625-002751
+2025-06-04 10:31:51,180 - Filial identificada: 157
+2025-06-04 10:31:54,269 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:31:56,293 - Erro ao integrar a nota na filial : <class 'pyodbc.Error'> returned a result with an exception set
+2025-06-04 10:31:59,346 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:34:47,595 - Autenticação realizada com sucesso! Token: bmlzc2Vp#276419b31b4a08e43e10145205f3679a0bbcee09
+2025-06-04 10:34:49,011 - Chamado: 0625-002751
+2025-06-04 10:34:49,011 - Filial identificada: 157
+2025-06-04 10:34:52,964 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:34:53,463 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:34:53,925 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:34:54,380 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:34:55,013 - Erro ao integrar a nota na filial : <class 'pyodbc.Error'> returned a result with an exception set
+2025-06-04 10:34:55,469 - Erro ao integrar a nota na filial : ('HY007', '[HY007] [Microsoft][ODBC SQL Server Driver]A instrução associada não está preparada (0) (SQLNumResultCols)')
+2025-06-04 10:41:39,567 - Autenticação realizada com sucesso! Token: bmlzc2Vp#f81d16b7c3f53b911732073e96ad58265ca57644
+2025-06-04 10:41:42,292 - Chamado: 0625-002751
+2025-06-04 10:41:42,292 - Filial identificada: 157
+2025-06-04 10:42:05,940 - Chamado 0625-002751 encerrado com sucesso! 
+
+2025-06-04 10:42:05,941 - Chamado: 0625-002753
+2025-06-04 10:42:05,941 - Filial identificada: 157
+2025-06-04 10:43:55,743 - Autenticação realizada com sucesso! Token: bmlzc2Vp#4e9144f55f4513ccfb50c8a16a8b25b56d4c3126
+2025-06-04 10:43:57,396 - Chamado: 0625-002753
+2025-06-04 10:43:57,396 - Filial identificada: 157
+2025-06-04 10:44:24,570 - Chamado 0625-002753 encerrado com sucesso! 
+
+2025-06-04 10:44:24,570 - Chamado: 0625-002814
+2025-06-04 10:44:24,571 - Filial identificada: 202
+2025-06-04 10:44:27,069 - Chamado 0625-002814 encerrado com sucesso! 
+
+2025-06-04 10:44:27,070 - Chamado: 0625-002889
+2025-06-04 10:44:27,070 - Filial identificada: 316
+2025-06-04 10:44:38,457 - Chamado 0625-002889 encerrado com sucesso! 
+

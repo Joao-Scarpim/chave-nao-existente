@@ -1,0 +1,16 @@
+2025-04-11 12:39:18,351 - Autenticação realizada com sucesso! Token: bmlzc2Vp#059cec460257a7a11a6ab394759bc532fa38dc2d
+2025-04-11 12:39:20,522 - Chamado: 0425-012321
+2025-04-11 12:39:20,523 - Filial identificada: 5
+2025-04-11 12:40:08,670 - Autenticação realizada com sucesso! Token: bmlzc2Vp#f4311f4af4ad30333c0d5a6f9c31835f70a484e1
+2025-04-11 12:40:09,969 - Chamado: 0425-012321
+2025-04-11 12:40:09,969 - Filial identificada: 5
+2025-04-11 12:40:31,052 - Ocorreu um erro durante a requisição: not enough values to unpack (expected 4, got 0)
+2025-04-11 12:49:00,762 - Autenticação realizada com sucesso! Token: bmlzc2Vp#1d1870656087c8915b95637fb36e9605dcb9601c
+2025-04-11 12:49:02,096 - Chamado: 0425-012321
+2025-04-11 12:49:02,097 - Filial identificada: 5
+2025-04-11 12:49:05,523 - Chamado 0425-012321 encerrado com sucesso!
+2025-04-11 12:49:05,523 - {"TChamado":{"Chave":"2138290"}}
+2025-04-11 12:49:05,524 - Chamado: 0425-012339
+2025-04-11 12:49:05,524 - Filial identificada: 242
+2025-04-11 12:49:19,618 - Chamado 0425-012339 encaminhado para análise.
+2025-04-11 12:49:19,618 - {"TChamado":{"Chave":"2138291"}}

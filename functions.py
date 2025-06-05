@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 import logging
 
+
 # === CONFIGURAÇÃO DO LOG ===
 log_dir = "logs_chave_nao_existente"
 os.makedirs(log_dir, exist_ok=True)
@@ -88,6 +89,49 @@ def ler_arquivo(nome_arquivo):
             return [linha.strip() for linha in arquivo.readlines() if linha.strip()]
     return []
 
+
+
+
+
+def integrar_notas_filial(nf_compra, pedido_compra, num_filial):
+    try:
+        conn_filial = conectar_filial(num_filial)
+        if conn_filial is None:
+            return False
+        cursor = conn_filial.cursor()
+
+        # Caminho relativo do script .sql
+        caminho_sql = os.path.join("robos", "robo_chave_nao_existente", "sql", "integrar_nota.sql")
+
+        # Leitura e substituição no SQL
+        with open(caminho_sql, "r", encoding="utf-8") as arquivo_sql:
+            script_sql = arquivo_sql.read()
+            script_sql = script_sql.format(
+                NF_COMPRA=nf_compra,
+                PEDIDO_COMPRA=pedido_compra
+            )
+
+        cursor.execute(script_sql)
+        conn_filial.commit()
+
+        # Validação
+        cursor.execute("SELECT 1 FROM NF_COMPRA WHERE NF_COMPRA = ?", nf_compra)
+        return bool(cursor.fetchone())
+
+    except Exception as e:
+        log(f"Erro ao integrar a nota na filial : {e}")
+        return False
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn_filial:
+            conn_filial.close()
+
+
+
+
+
 def consultar_notas_central(chaves, num_filial):
     try:
         conn = conectar_central()
@@ -96,10 +140,11 @@ def consultar_notas_central(chaves, num_filial):
 
         cursor = conn.cursor()
 
-        notas_na_central = []
+        notas_integradas = []
         notas_nao_central = []
         notas_sem_pedido = []
         notas_outra_filial = []
+        notas_nao_integradas = []
 
         for chave in chaves:
             cursor.execute("SELECT NF_COMPRA, PEDIDO_COMPRA, EMPRESA FROM NF_COMPRA WHERE CHAVE_NFE = ?", (chave,))
@@ -111,58 +156,43 @@ def consultar_notas_central(chaves, num_filial):
 
                 if pedido_compra is None:
                     notas_sem_pedido.append(chave)
+                    continue
 
                 if nota_info["EMPRESA"] == num_filial:
-                    notas_na_central.append(chave)
+                    if integrar_notas_filial(nf_compra, pedido_compra, num_filial):
+                        notas_integradas.append(chave)
+                    else:
+                        notas_nao_integradas.append(chave)
+
                 else:
                     notas_outra_filial.append(nota_info)
             else:
                 notas_nao_central.append(chave)
 
-        cursor.close()
-        conn.close()
 
-        return notas_na_central, notas_nao_central, notas_sem_pedido, notas_outra_filial
+        return notas_integradas, notas_nao_central, notas_sem_pedido, notas_outra_filial, notas_nao_integradas
 
     except Exception as e:
         log(f"Erro ao consultar notas na central: {e}")
-        return [], [], [], []
+        return [], [], [], [], []
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
 
-def consultar_notas_filial(notas_na_central, num_filial):
-    try:
-        conn_filial = conectar_filial(num_filial)
-        if conn_filial is None:
-            return
 
-        cursor = conn_filial.cursor()
 
-        notas_integradas = []
-        notas_nao_loja = []
-
-        for chave in notas_na_central:
-            cursor.execute("SELECT NF_COMPRA FROM NF_COMPRA WHERE CHAVE_NFE = ?", (chave,))
-            resultado = cursor.fetchone()
-
-            if resultado:
-                notas_integradas.append(chave)
-            else:
-                notas_nao_loja.append(chave)
-
-        cursor.close()
-        conn_filial.close()
-
-        return notas_integradas, notas_nao_loja
-    except Exception as e:
-        log(f"Erro ao consultar notas na filial: {e}")
-
-def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, notas_integradas, notas_nao_loja, notas_outra_filial):
+def interagir_chamado(cod_chamado, token, notas_integradas, notas_nao_central, notas_sem_pedido, notas_outra_filial, notas_nao_integradas):
     descricao = "Resumo da Integração de Notas\n\n"
 
     if notas_integradas:
         descricao += "*Notas Integradas na Filial:*\n" + "\n".join(notas_integradas) + "\n\n"
 
-    if notas_nao_loja:
-        descricao += "*Notas não encontradas na Loja:*\n" + "\n".join(notas_nao_loja) + "\n\n"
+    if notas_nao_integradas:
+        descricao += "*Não foi possível integrar as seguintes notas:*\n" + "\n".join(notas_nao_integradas) + "\n\n"
+        descricao += "Favor abrir um novo chamado para essas notas.\n\n"
+
 
     if notas_sem_pedido:
         descricao += "*Notas sem Pedido de Compra:*\n" + "\n".join(notas_sem_pedido) + "\n\n"
@@ -178,7 +208,7 @@ def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, n
             descricao += f"{nota['CHAVE']} --  FILIAL {nota['EMPRESA']}\n"
         descricao += "\n"
 
-    if notas_nao_central or notas_nao_loja:
+    if notas_nao_central:
         cod_status = "0000006"
     else:
         cod_status = "0000002"
@@ -232,13 +262,10 @@ def interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, n
 
         if response.status_code == 200:
             if cod_status == "0000006":
-                log(f"Chamado {cod_chamado} encaminhado para análise.")
-                log(response.text)
-                log('\n')
+                log(f"Chamado {cod_chamado} encaminhado para análise. \n")
+
             if cod_status == "0000002":
-                log(f"Chamado {cod_chamado} encerrado com sucesso!")
-                log(response.text)
-                log('\n')
+                log(f"Chamado {cod_chamado} encerrado com sucesso! \n")
         else:
             log(f"Erro ao interagir no chamado. Código: {response.status_code}")
             log("Resposta da API:")

@@ -1,0 +1,33 @@
+2025-04-13 15:58:58,384 - Autenticação realizada com sucesso! Token: bmlzc2Vp#4bb10c3a6b9a4f71f4982aa84273e2146b7fe34a
+2025-04-13 15:59:11,722 - Chamado: 0425-010571
+2025-04-13 15:59:11,722 - Filial identificada: 167
+2025-04-13 15:59:17,220 - Chamado 0425-010571 encaminhado para análise.
+2025-04-13 15:59:17,221 - {"TChamado":{"Chave":"2139928"}}
+2025-04-13 15:59:17,221 - 
+
+2025-04-13 15:59:17,221 - Chamado: 0425-012827
+2025-04-13 15:59:17,222 - Filial identificada: 362
+2025-04-13 15:59:23,985 - Chamado 0425-012827 encerrado com sucesso!
+2025-04-13 15:59:23,985 - {"erro":"O Chamado 0425-012827 n\u00e3o foi Salvo devido aos motivos:<br>O Chamado foi Finalizado, n\u00e3o \u00e9 poss\u00edvel criar a\u00e7\u00f5es"}
+2025-04-13 15:59:23,985 - 
+
+2025-04-13 15:59:23,986 - Chamado: 0425-013223
+2025-04-13 15:59:23,986 - Filial identificada: 303
+2025-04-13 15:59:26,554 - Chamado 0425-013223 encaminhado para análise.
+2025-04-13 15:59:26,554 - {"TChamado":{"Chave":"2139929"}}
+2025-04-13 15:59:26,554 - 
+
+2025-04-13 15:59:26,555 - Chamado: 0425-013319
+2025-04-13 15:59:26,555 - Filial identificada: 168
+2025-04-13 15:59:37,248 - Chamado 0425-013319 encerrado com sucesso!
+2025-04-13 15:59:37,248 - {"TChamado":{"Chave":"2139930"}}
+2025-04-13 15:59:37,249 - 
+
+2025-04-13 15:59:37,249 - Chamado: 0425-013348
+2025-04-13 15:59:37,249 - Filial identificada: 421
+2025-04-13 15:59:42,515 - Chamado 0425-013348 encerrado com sucesso!
+2025-04-13 15:59:42,516 - {"TChamado":{"Chave":"2139931"}}
+2025-04-13 15:59:42,516 - 
+
+2025-04-13 15:59:42,517 - Chamado: 0425-013381
+2025-04-13 15:59:42,518 - Filial identificada: 496

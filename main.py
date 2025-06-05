@@ -128,11 +128,11 @@ try:
                 continue
 
             # Consultar notas
-            notas_confirmadas, notas_nao_central, notas_sem_pedido, notas_outra_filial = fun.consultar_notas_central(chaves_nf, num_filial)
-            notas_integradas, notas_nao_loja = fun.consultar_notas_filial(notas_confirmadas, num_filial)
+            notas_integradas, notas_nao_central, notas_sem_pedido, notas_outra_filial, notas_nao_integradas = fun.consultar_notas_central(chaves_nf, num_filial)
+
 
             # Interagir no chamado
-            fun.interagir_chamado(cod_chamado, token, notas_nao_central, notas_sem_pedido, notas_integradas, notas_nao_loja, notas_outra_filial)
+            fun.interagir_chamado(cod_chamado, token, notas_integradas, notas_nao_central, notas_sem_pedido, notas_outra_filial, notas_nao_integradas)
     else:
         log(f"Erro na requisição. Código: {response.status_code}")
         log(f"Mensagem: {response.text}")
